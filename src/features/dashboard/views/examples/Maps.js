@@ -13,6 +13,7 @@ import { Card, Container, Row } from "reactstrap";
 
 // core components
 import Header from "../../components/Headers/Header.js";
+import SimpleExample from "./SimpleExample.js";
 // mapTypeId={google.maps.MapTypeId.ROADMAP}
 const MapWrapper = withScriptjs(
   withGoogleMap(props => (
@@ -80,7 +81,7 @@ class Maps extends React.Component {
           <Row>
             <div className="col">
               <Card className="shadow border-0">
-                <MapWrapper
+                {/* <MapWrapper
                   googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
                   loadingElement={<div style={{ height: `100%` }} />}
                   containerElement={
@@ -93,7 +94,8 @@ class Maps extends React.Component {
                   mapElement={
                     <div style={{ height: `100%`, borderRadius: "inherit" }} />
                   }
-                />
+                /> */}
+                <SimpleExample />
               </Card>
             </div>
           </Row>
